@@ -6,15 +6,32 @@
     <string name="question_africa">The source of the Nile River is in Egypt.</string>
     <string name="question_americas">The Amazon River is the longest river in the Americas.</string>
     <string name="question_asia">Lake Baikal is the world\'s oldest and deepest freshwater lake.</string>
+
+    <string name="question_russia">The largest country in the world is Russia.</string>
+    <string name="question_river_thames">The River Thames flows through Cambridge.</string>
+    <string name="question_river_severn">River Severn goes through both England and Wales.</string>
+    <string name="question_volcano">Volcanoes are often found on tectonic plates.</string>
+    <string name="question_dolphins">There are dolphins in the Amazon river.</string>
+    <string name="question_rivers">Rivers hold 20% of the world’s water.</string>
+    <string name="question_mtsnowdon">Mount Snowdon is the highest mountain in Wales.</string>
+    <string name="question_river_bank">The sides of the river are called the bed.</string>
+    <string name="question_tuvalu">Tuvalu is the country is the smallest population.</string>
+    <string name="question_norway">Norway is the country with the longest coastline.</string>  // False
+    <string name="question_milan">Milan is located in Lombardy.</string>  // True
+    <string name="question_kabul">Kabul is the capital of Afghanistan.</string>  // True
+    <string name="question_bergamo">Bergamo is located in Northern Italy.</string> // True
+    <string name="question_china">China borders 14 other countries.</string>  // True
+
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="next_button">Next</string>
     <string name="prev_button">Prev</string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
-    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="warning_text">Are you sure you want to do this? Cheating is Wrong! </string>
     <string name="show_answer_button">Show Answer</string>
     <string name="cheat_button">Cheat!</string>
     <string name="judgment_toast">Cheating is wrong.</string>
+    <string name="restart_button">RESTART.</string>
 
 </resources>

@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
+
     <TextView
         android:id="@+id/question_text_view"
         android:layout_width="wrap_content"
@@ -14,6 +15,7 @@
         android:gravity="center"
         android:padding="24dp"
         android:text="@string/question_australia" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +41,7 @@
             android:id="@+id/cheat_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+
             android:text="@string/cheat_button" />
 
     </LinearLayout>
@@ -63,7 +65,20 @@
             android:text="@string/next_button"
             app:icon="@drawable/arrow_right"
             app:iconGravity="end"/>
-
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/restart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restart_button"
+            app:iconGravity="end"/>
+    </LinearLayout>
+
 </LinearLayout>
 

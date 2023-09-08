@@ -23,8 +23,30 @@ class QuizViewModel (private val savedStateHandle: SavedStateHandle) : ViewModel
         Question(R.string.question_oceans, true),
         Question(R.string.question_mideast, false),
         Question(R.string.question_africa, false),
+
         Question(R.string.question_americas, true),
-        Question(R.string.question_asia, true))
+        Question(R.string.question_asia, true),
+        /*
+        Question(R.string.question_russia, true),
+        Question(R.string.question_river_thames, false),
+        Question(R.string.question_river_severn, true),
+        Question(R.string.question_volcano, true),
+        Question(R.string.question_dolphins, true),
+        Question(R.string.question_rivers, false),
+        Question(R.string.question_mtsnowdon, true),
+         */
+        Question(R.string.question_river_bank, false),
+
+        Question(R.string.question_tuvalu, false),
+        Question(R.string.question_norway, false),
+
+        //Question(R.string.question_milan, true),
+        //Question(R.string.question_kabul, true),
+        //Question(R.string.question_bergamo, true),
+
+
+        Question(R.string.question_china, true)
+    )
 
     var isCheater: Boolean
         get() = savedStateHandle.get(IS_CHEATER_KEY) ?: false
@@ -48,5 +70,9 @@ class QuizViewModel (private val savedStateHandle: SavedStateHandle) : ViewModel
 
     fun moveToPrev() {
         currentIndex = if(currentIndex !=0 ) (currentIndex - 1) % questionBank.size else questionBank.size - 1
+    }
+
+    fun moveToBeginning() {
+        currentIndex = 0
     }
 }

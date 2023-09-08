@@ -94,6 +94,15 @@ class MainActivity : AppCompatActivity() {
             cheatLauncher.launch(intent)
         }
 
+        binding.restartButton.setOnClickListener {
+            quizViewModel.moveToBeginning()
+            //isAnswered(currentIndex)
+            updateQuestion()
+            if(quizViewModel.currentIndex == 0) {
+                quizViewModel.currentScore = 0
+            }
+        }
+
         updateQuestion()
     }
 
@@ -134,7 +143,7 @@ class MainActivity : AppCompatActivity() {
         }
          */
         val messageResId = when {
-            quizViewModel.isCheater -> R.string.judgment_toast
+            //quizViewModel.isCheater -> R.string.judgment_toast
             userAnswer == correctAnswer -> R.string.correct_toast
             else -> R.string.incorrect_toast
         }
